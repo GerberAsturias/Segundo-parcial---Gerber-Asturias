@@ -33,8 +33,9 @@ namespace CapaVista_Menu
             this.catalogosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.seguridadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultaBitacoraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.identificacionAlumnoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ingresoDeDatosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -44,7 +45,8 @@ namespace CapaVista_Menu
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.catalogosToolStripMenuItem,
             this.seguridadToolStripMenuItem,
-            this.salirToolStripMenuItem});
+            this.salirToolStripMenuItem,
+            this.ingresoDeDatosToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 28);
@@ -65,6 +67,7 @@ namespace CapaVista_Menu
             this.seguridadToolStripMenuItem.Name = "seguridadToolStripMenuItem";
             this.seguridadToolStripMenuItem.Size = new System.Drawing.Size(91, 24);
             this.seguridadToolStripMenuItem.Text = "Seguridad";
+            this.seguridadToolStripMenuItem.Click += new System.EventHandler(this.seguridadToolStripMenuItem_Click);
             // 
             // consultaBitacoraToolStripMenuItem
             // 
@@ -73,6 +76,12 @@ namespace CapaVista_Menu
             this.consultaBitacoraToolStripMenuItem.Text = "Consulta Bitacora";
             this.consultaBitacoraToolStripMenuItem.Click += new System.EventHandler(this.consultaBitacoraToolStripMenuItem_Click);
             // 
+            // identificacionAlumnoToolStripMenuItem
+            // 
+            this.identificacionAlumnoToolStripMenuItem.Name = "identificacionAlumnoToolStripMenuItem";
+            this.identificacionAlumnoToolStripMenuItem.Size = new System.Drawing.Size(238, 26);
+            this.identificacionAlumnoToolStripMenuItem.Text = "Identificacion Alumno";
+            // 
             // salirToolStripMenuItem
             // 
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
@@ -80,11 +89,12 @@ namespace CapaVista_Menu
             this.salirToolStripMenuItem.Text = "Salir";
             this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
             // 
-            // identificacionAlumnoToolStripMenuItem
+            // ingresoDeDatosToolStripMenuItem
             // 
-            this.identificacionAlumnoToolStripMenuItem.Name = "identificacionAlumnoToolStripMenuItem";
-            this.identificacionAlumnoToolStripMenuItem.Size = new System.Drawing.Size(238, 26);
-            this.identificacionAlumnoToolStripMenuItem.Text = "Identificacion Alumno";
+            this.ingresoDeDatosToolStripMenuItem.Name = "ingresoDeDatosToolStripMenuItem";
+            this.ingresoDeDatosToolStripMenuItem.Size = new System.Drawing.Size(177, 24);
+            this.ingresoDeDatosToolStripMenuItem.Text = "Mantenimiento (CRUD)";
+            this.ingresoDeDatosToolStripMenuItem.Click += new System.EventHandler(this.ingresoDeDatosToolStripMenuItem_Click);
             // 
             // MenuGeneral
             // 
@@ -111,5 +121,6 @@ namespace CapaVista_Menu
         private System.Windows.Forms.ToolStripMenuItem consultaBitacoraToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem identificacionAlumnoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ingresoDeDatosToolStripMenuItem;
     }
 }
