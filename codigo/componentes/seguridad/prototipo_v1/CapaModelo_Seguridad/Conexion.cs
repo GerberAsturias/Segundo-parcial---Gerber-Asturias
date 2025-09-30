@@ -9,7 +9,7 @@ namespace CapaModelo_Seguridad
 {
     class Conexion
     {
-        public OdbcConnection conexion()
+        public OdbcConnection Abrirconexion()
         {
             //creacion de la conexion via ODBC
             OdbcConnection conn = new OdbcConnection("Dsn=segundoparcial2k25");
@@ -35,6 +35,10 @@ namespace CapaModelo_Seguridad
             {
                 Console.WriteLine("No Conectó");
             }
+        }
+        public OdbcConnection CrearConexion()
+        {
+            return new OdbcConnection("Dsn=segundoparcial2k25");
         }
     }
 }

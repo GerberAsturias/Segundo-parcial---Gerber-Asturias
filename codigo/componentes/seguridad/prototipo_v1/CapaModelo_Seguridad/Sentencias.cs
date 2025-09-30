@@ -171,5 +171,6 @@ namespace CapaModelo_Seguridad
 
             EjecutarComando(sSql);
         }
+
     }
 }
